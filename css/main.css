@@ -1,3 +1,359 @@
 /*
  * Estilos de tu proyecto
  */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body{ 
+ 	font-family: 'Montserrat', sans-serif
+}
+.profile-text{	
+	margin: 0 auto;
+	color: whitesmoke;
+}
+.profile-text p{
+	text-align: center;
+	color: whitesmoke;
+}
+a{
+	text-decoration: none;
+}
+/* Nav Bar */
+.row-nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.row-nav h1{
+	margin-left: 20px;
+}
+.nav-menu.small{
+	min-height: 50px;
+	height: 40px;
+	padding: 10px;
+	
+}
+.nav-menu.small h1{
+	font-size: 16px;
+}
+.nav-menu{
+ 	background-color: #2C3E50;
+ 	overflow: auto;
+	position: fixed;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	z-index: 1;
+	width: 100%;
+}
+.nav-menu h1{
+ 	float: left;
+ 	color: whitesmoke;
+ 	font-weight: 900;
+ 	font-size: 20px;
+}
+.menu{
+ 	float: right;
+ 	text-align: right;
+}
+.menu a{
+ 	color: whitesmoke;
+ 	padding: 20px 20px;
+}
+.menu a:hover{
+	background-color: #18BC9C;
+	color: whitesmoke;
+}
+
+/* Header */
+.text-header{
+	background-color: #18BC9C;
+	width: 100%;
+	padding-top: 100px;
+	align-content: center;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.text-header h1{
+	text-align: center;
+	color: whitesmoke;
+	font-weight: 600;
+	font-size: 65px;
+}
+
+img.profile{
+	width: 256px;
+	height: 256px;
+	margin: 0 auto;
+	text-align: center;
+}
+.about{
+	background-color: #18BC9C;
+}
+.text-header .icon-all{
+ 	 width:60px; 
+ 	 height:4px; 
+ 	 background: whitesmoke;
+ 	 display: inline-block;
+ 	 margin-bottom: 4px;
+}
+.text-header i{
+	width: 30px;
+    height: 30px;
+	color: whitesmoke; 
+	font-size: 25px;
+}
+
+/* Portafolio */
+.grid{
+	width: 32%;
+}
+.grid img{
+	width: 100%;
+	height: auto;
+}
+.row-portaf{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding:5px 20px;
+	
+}
+.portafolio{
+	color: #2C3E50;
+	text-align: center;
+	padding:10px 20px;
+}
+.portafolio h1{
+	color: #2C3E50;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 20px;
+}
+.portafolio .icon-all{
+ 	width:60px; 
+ 	height:4px; 
+ 	background: #2C3E50;
+ 	display: inline-block;
+ 	margin-bottom: 4px;
+}
+.portafolio i{
+	width: 30px;
+    height: 30px;
+	color: #2C3E50;
+	font-size: 25px;
+}
+.hide{
+  	display: none;
+}
+.grid{
+	position: relative;
+	overflow: auto;
+}
+
+.overlay {
+  	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #18BC9C;
+	padding: 12px;
+	
+}
+
+.grid:hover .overlay {
+    opacity: 0.8;
+}
+.grid i {
+    color: whitesmoke;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Modal */
+#modalId{
+    background-color: #2C3E50;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#modalId .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: pink;
+}
+.close img{
+    width: 50px;
+}
+/************************about**************/
+.row-about{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.about-p{
+	width: 40%;
+}
+.about-boton{
+	padding: 20px;
+	width: 350px;
+	display: inline-block;
+}
+.about{
+	color: whitesmoke;
+	text-align: center;
+}
+.about h1{
+	text-align: center;
+	font-size: 35px;
+	margin-top: 20px;
+}
+.about button {
+    background-color: #18BC9C; 
+    border: 2px solid whitesmoke; 
+    border-radius: 10px;
+    color: white;
+    padding: 5px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+.about button i{
+	font-size: 20px;
+}
+.about button p{
+	padding-top: 6px;
+	padding-bottom: 0;
+}
+.about button:hover {
+    background-color: whitesmoke; 
+    border: 2px solid #18BC9C; 
+    color: #18BC9C;
+    padding: 5px 28px;  
+}
+.about button i:hover{
+	color: #18BC9C;
+}
+.about .icon-all{
+ 	width:60px; 
+ 	height:4px; 
+ 	background: whitesmoke; 
+ 	display: inline-block;
+ 	margin-bottom: 4px;
+}
+.about i{
+	width: 30px;
+    height: 30px;
+	color: whitesmoke; 
+	font-size: 25px;
+}
+.about p{
+	padding: 10px 30px;
+	text-align: left;
+}
+
+/* Contact me */
+.btn-formulario{
+	text-align: left;
+	width: 70%;
+	margin: 0 auto;
+}
+.row-formulario{
+	padding: 10px 0;
+}
+input{
+	width: 70%;
+	margin: 0 auto; 
+	border: none;
+    border-bottom: 1px solid #a9adac;
+    padding: 10px;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 2;
+}
+.contact{
+	text-align: center;
+	color: #2C3E50;
+	height: 580px;
+}
+.contact h1{
+	text-align: center;
+	font-size: 35px;
+	margin-top: 20px;
+}
+.contact button{
+	background-color: #18BC9C; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;  
+    text-align: left;
+    left: 10px;
+    width: 60px;
+}
+.contact .icon-all{
+ 	width:60px; 
+ 	height:4px; 
+ 	background: #2C3E50;
+ 	display: inline-block;
+ 	margin-bottom: 4px;
+}
+.contact i{
+	width: 30px;
+    height: 30px;
+    font-size: 25px;
+	color: #2C3E50;
+}
+
+/* Footer */
+.el-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.el-footer div{
+	width: 40%;
+}
+footer{
+	background-color: #2C3E50;
+	color: whitesmoke;
+	text-align: center;
+	padding: 0;
+}
+footer i{
+	size: 20px;
+	color: whitesmoke;
+	padding: 5px;
+	display: inline-block;
+}
+footer h2{
+	padding: 18px 0;
+}
+footer a{
+	color: #18BC9C;
+}
+.final{
+	background-color: #1a2430;
+	padding: 15px;
+	margin-top: 40px;
+}
